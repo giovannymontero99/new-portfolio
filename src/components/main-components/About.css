@@ -1,0 +1,21 @@
+/* About styles */
+.about {
+  padding: 8rem 0;
+}
+
+.about-section {
+  padding: 1rem 0;
+  margin: 1rem 0;
+  display: flex;
+  height: 16rem;
+  justify-content: center;
+  align-items: center;
+}
+.about-section > div {
+  flex: 1;
+  font-size: 1.3rem;
+}
+
+.about-section > div:last-child {
+  text-align: center;
+}

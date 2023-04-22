@@ -1,11 +1,27 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
-  font-family: 'Heebo', sans-serif;
-  font-family: 'Red Rose', cursive;
-  font-family: 'Rubik', sans-serif;
+:root {
+  --text-ligth-color: #e0e0e0;
+  --text-dark-color: #0f0f0f;
+}
+
+body {
+  font-family: 'Heebo', sans-serif, 'Rubik', 'Red Rose', cursive, sans-serif;
+}
+
+h3 {
+  font-size: clamp(1rem, calc((100vw - 80vw) * 0.1), 2rem);
+  color: var(--text-ligth-color);
+}
+p {
+  font-size: clamp(0.5rem, calc((100vw - 90vw) * 0.1), 1.5rem);
+  color: var(--text-ligth-color);
+}
+a {
+  text-decoration: none;
+  color: var(--text-ligth-color);
 }
