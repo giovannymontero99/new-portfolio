@@ -1,5 +1,6 @@
 import React from 'react';
 import './About.css';
+import logo from '../../../public/logo.png';
 
 const About = () => {
   return (
@@ -18,7 +19,7 @@ const About = () => {
           </p>
         </div>
         <div>
-          <img src="./logo.png" alt="logo" />
+          <img src={logo} alt="logo" />
         </div>
       </div>
     </section>
