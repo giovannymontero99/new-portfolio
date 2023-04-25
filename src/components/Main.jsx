@@ -1,6 +1,7 @@
 import './Main.css';
 import About from './main-components/About';
 import Updates from './main-components/Updates';
+import Skills from './main-components/Skills';
 
 const Main = () => {
   return (
@@ -13,6 +14,7 @@ const Main = () => {
         <main>
           <Updates />
           <About />
+          <Skills />
         </main>
       </div>
     </section>
