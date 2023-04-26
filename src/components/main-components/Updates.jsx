@@ -4,7 +4,7 @@ import './Updates.css';
 const Updates = () => {
   return (
     <section id="projects">
-      <h3>Updates</h3>
+      <h3>Projects</h3>
       <div className="updatesSection">
         <div className="targetUpdate">
           <p>Day 1</p>

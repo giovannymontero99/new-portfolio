@@ -1,3 +1,14 @@
+#projects {
+  padding: 1rem 1rem;
+  margin-bottom: 8rem;
+  background: linear-gradient(
+    60deg,
+    rgba(36, 69, 219, 0.692),
+    rgba(174, 0, 255, 0.466)
+  );
+  border-radius: 16px;
+}
+
 .updatesSection {
   display: flex;
   justify-content: space-evenly;

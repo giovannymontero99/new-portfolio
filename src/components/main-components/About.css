@@ -1,6 +1,9 @@
 /* About styles */
 .about {
-  padding: 8rem 0;
+  padding: 1rem 1rem;
+  border-radius: 16px;
+  background: linear-gradient(60deg, #092442, #1e9ec5b4);
+  margin: 8rem 0;
 }
 
 .about-section {

@@ -1,6 +1,6 @@
 import React from 'react';
 import './About.css';
-import logo from '../../../public/logo.png';
+import logo from '/logo.svg';
 
 const About = () => {
   return (

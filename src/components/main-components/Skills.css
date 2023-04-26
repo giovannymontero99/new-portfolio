@@ -1,0 +1,17 @@
+#skills {
+  padding: 1rem;
+  margin: 7rem 0;
+  text-align: center;
+}
+
+.skills-title {
+  margin-bottom: 1rem;
+}
+
+.skills-logos {
+  text-align: center;
+  padding: 1rem;
+}
+.skills-logos > div {
+  padding: 1rem;
+}
