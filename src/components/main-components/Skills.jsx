@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import './Skills.css';
 import htmlLogo from '../../assets/html.svg';
 import cssLogo from '../../assets/css.svg';
@@ -9,11 +9,28 @@ import nodejsLogo from '../../assets/nodejs.svg';
 import mysqlLogo from '../../assets/mysql.svg';
 import gitLogo from '../../assets/git.svg';
 
-const Skillls = () => {
-  
+const Skills = () => {
+  const skillsRef = useRef();
+  const [isIntersected, setIsIntersected] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (observedSection) => {
+        observedSection.forEach((entry) =>
+          setIsIntersected(entry.isIntersecting)
+        );
+      },
+      { threshold: 0.3 }
+    );
+    observer.observe(skillsRef.current);
+  }, []);
 
   return (
-    <section id="skills">
+    <section
+      id="skills"
+      ref={skillsRef}
+      className={isIntersected ? '' : 'observed'}
+    >
       <div>
         <div className="skills-title">
           <h3>Skills</h3>
@@ -52,4 +69,4 @@ const Skillls = () => {
   );
 };
 
-export default Skillls;
+export default Skills;
