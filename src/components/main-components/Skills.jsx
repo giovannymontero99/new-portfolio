@@ -1,5 +1,7 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React from 'react';
+import useIntersection from '../../hooks/useIntersection';
 import './Skills.css';
+
 import htmlLogo from '../../assets/html.svg';
 import cssLogo from '../../assets/css.svg';
 import javascriptLogo from '../../assets/javascript.svg';
@@ -10,26 +12,13 @@ import mysqlLogo from '../../assets/mysql.svg';
 import gitLogo from '../../assets/git.svg';
 
 const Skills = () => {
-  const skillsRef = useRef();
-  const [isIntersected, setIsIntersected] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (observedSection) => {
-        observedSection.forEach((entry) =>
-          setIsIntersected(entry.isIntersecting)
-        );
-      },
-      { threshold: 0.3 }
-    );
-    observer.observe(skillsRef.current);
-  }, []);
+  const [isIntersected, skillsRef] = useIntersection();
 
   return (
     <section
       id="skills"
       ref={skillsRef}
-      className={isIntersected ? '' : 'observed'}
+      className={isIntersected ? 'skills observing' : 'skills'}
     >
       <div>
         <div className="skills-title">
