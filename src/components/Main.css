@@ -4,6 +4,11 @@
   width: 100%;
 }
 
+.isIntersected {
+  box-shadow: 0px 0px 10px rgb(43, 43, 43);
+  transition-duration: 0.5s;
+}
+
 .bodySection {
   background-color: #101010;
   border-radius: 8px;
@@ -12,6 +17,14 @@
   height: calc(100vh - 2rem);
   color: #fff;
   padding: 2rem 7rem;
+}
+
+.bodySection::-webkit-scrollbar {
+  width: 0.3rem;
+}
+.bodySection::-webkit-scrollbar-thumb {
+  background: rgb(209, 209, 209);
+  border-radius: 16px;
 }
 
 .main-title {
@@ -23,4 +36,15 @@
   font-size: 1rem;
   color: #cfcccc;
   padding-bottom: 8rem;
+}
+@media (max-width: 1024px) {
+  .bodySection {
+    padding: 3rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .bodySection {
+    padding: 1rem 1rem;
+  }
 }

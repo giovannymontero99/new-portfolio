@@ -1,4 +1,9 @@
 /* About styles */
+#about {
+  height: 100vh;
+  display: flex;
+}
+
 .about {
   padding: 1rem 1rem;
   border-radius: 16px;

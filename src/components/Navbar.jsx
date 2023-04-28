@@ -23,14 +23,10 @@ const Navbar = () => {
           <li className="munu__li">
             <a href="#contact">Contact</a>
           </li>
-          <li className="munu__li">
-            <a href="#twiter">Twiter</a>
-          </li>
         </ul>
         <div className="buttonsSection">
           <div className="buttonSelected">Ligth</div>
           <div className="buttonSelected">Dark</div>
-          <div className="buttonSelected">Auto</div>
         </div>
       </div>
     </section>

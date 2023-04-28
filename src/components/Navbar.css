@@ -64,4 +64,36 @@
   border-radius: 8px;
   align-items: center;
   background-color: #707070;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menuSection__navBar {
+    width: 10rem;
+  }
+  .about {
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .about-section {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex: 1;
+  }
+  .updatesSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .targetUpdate {
+    width: 100%;
+    max-width: 360px;
+  }
+  .menuSection__navBar {
+    display: none;
+  }
 }

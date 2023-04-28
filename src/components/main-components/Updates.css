@@ -1,4 +1,10 @@
 #projects {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.projects {
   padding: 1rem 1rem;
   margin-bottom: 8rem;
   background: linear-gradient(
@@ -7,6 +13,7 @@
     rgba(174, 0, 255, 0.466)
   );
   border-radius: 16px;
+  width: 100%;
 }
 
 .updatesSection {
@@ -22,4 +29,9 @@
   height: 10rem;
   padding: 16px;
   border-radius: 8px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+.targetUpdate:hover {
+  box-shadow: 0px 0px 3px #000;
 }
