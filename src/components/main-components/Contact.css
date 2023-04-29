@@ -5,3 +5,7 @@
   padding: 1rem;
   border-radius: 1rem;
 }
+
+.contact > div > a > img {
+  width: 25px;
+}

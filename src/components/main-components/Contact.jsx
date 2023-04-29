@@ -11,10 +11,7 @@ const Contact = () => {
 
   return (
     <footer id="contact">
-      <div
-        className={isIntersected ? 'contact isIntersected' : 'contact'}
-        ref={contactRef}
-      >
+      <div className="contact" ref={contactRef}>
         <div>
           <a
             href="https://www.linkedin.com/in/giovanny-montero-carvajal-aa541a194/"
