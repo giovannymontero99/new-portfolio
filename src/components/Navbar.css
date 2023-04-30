@@ -67,12 +67,22 @@
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .menuSection__navBar {
     width: 10rem;
   }
+}
+
+@media (max-width: 768px) {
+  .menuSection__navBar {
+    position: absolute;
+    display: block;
+    height: auto;
+  }
+
+  /* ABOUT STYLES */
   .about {
-    height: 30rem;
+    height: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -83,17 +93,5 @@
     flex-direction: column;
     justify-content: space-evenly;
     flex: 1;
-  }
-  .updatesSection {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .targetUpdate {
-    width: 100%;
-    max-width: 360px;
-  }
-  .menuSection__navBar {
-    display: none;
   }
 }

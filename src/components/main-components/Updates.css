@@ -35,3 +35,34 @@
 .targetUpdate:hover {
   box-shadow: 0px 0px 3px #000;
 }
+
+@media (max-width: 1024px) {
+  .updatesSection {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .updatesSection {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+  }
+}
+@media (max-width: 450px) {
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .updatesSection {
+    grid-template-columns: repeat(1, minmax(100px, 1fr));
+    height: auto;
+  }
+}

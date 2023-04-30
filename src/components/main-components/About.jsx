@@ -25,7 +25,7 @@ const About = () => {
               Desarrollo de Sistemas de Información (SENA).
             </p>
           </div>
-          <div>
+          <div className="about-img">
             <img src={logo} alt="logo" />
           </div>
         </div>

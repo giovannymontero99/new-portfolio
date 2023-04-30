@@ -37,6 +37,9 @@
   color: #cfcccc;
   padding-bottom: 8rem;
 }
+
+/*  Estilos para responsive design */
+
 @media (max-width: 1024px) {
   .bodySection {
     padding: 3rem 2rem;

@@ -14,11 +14,11 @@ body {
 }
 
 h3 {
-  font-size: clamp(1rem, calc((100vw - 80vw) * 0.1), 2rem);
+  font-size: clamp(1.3rem, calc((100vw - 80vw) * 0.1), 2rem);
   color: var(--text-ligth-color);
 }
 p {
-  font-size: clamp(0.8rem, calc((100vw - 90vw) * 0.1), 1.5rem);
+  font-size: clamp(1rem, calc((100vw - 90vw) * 0.1), 1.5rem);
   color: var(--text-ligth-color);
 }
 a {
