@@ -2,6 +2,7 @@
 #about {
   height: 100vh;
   display: flex;
+  justify-content: center;
 }
 
 .about {
@@ -9,19 +10,22 @@
   border-radius: 16px;
   background: linear-gradient(60deg, #092442, #1e9ec5b4);
   margin: 8rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24rem;
 }
 
 .about-section {
   padding: 1rem 0;
   margin: 1rem 0;
   display: flex;
-  height: 16rem;
-  justify-content: center;
+  height: 15rem;
   align-items: center;
 }
+
 .about-section > div {
   flex: 1;
-  font-size: 1.3rem;
 }
 
 .about-section > div:last-child {

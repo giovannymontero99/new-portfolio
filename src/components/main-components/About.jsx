@@ -14,7 +14,7 @@ const About = () => {
       >
         <h3>About</h3>
         <div className="about-section">
-          <div>
+          <div className="about-text">
             <p>
               Soy Giovanny Andres Montero Carvajal, nací en la ciudad de Bogotá,
               y actualmente vivo en la ciudad de Manizales, Colombia.

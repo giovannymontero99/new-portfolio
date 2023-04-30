@@ -20,13 +20,13 @@
   display: flex;
   justify-content: space-evenly;
   margin-top: 1rem;
+  height: 15rem;
 }
 
 .targetUpdate {
   background-color: #191919;
   flex: 1;
   margin: 8px;
-  height: 10rem;
   padding: 16px;
   border-radius: 8px;
   cursor: pointer;
