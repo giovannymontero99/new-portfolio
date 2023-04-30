@@ -1,27 +1,55 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Navbar.css';
 
 const Navbar = () => {
+  const [btnActive, setBtnActive] = useState(false);
+
+  const handleButton = () => {
+    return setBtnActive(!btnActive);
+  };
+
   return (
     <section className="menuSection">
-      <div className="menuSection__navBar">
+      <div
+        onClick={handleButton}
+        class={`hamburger hamburger--spring ${btnActive ? 'is-active' : ''}`}
+      >
+        <div class="hamburger-box">
+          <div class="hamburger-inner"></div>
+        </div>
+      </div>
+      <div
+        className={`menuSection__navBar ${
+          btnActive ? 'menuSection__navBar-active' : ''
+        }`}
+      >
         <ul className="menu__ul">
           <li className="logo">GAMC</li>
           <li className="munu__li">
-            <a href="#home">Home</a>
+            <a href="#home" onClick={handleButton}>
+              Home
+            </a>
           </li>
           <li className="munu__li">
-            <a href="#about">About</a>
+            <a href="#about" onClick={handleButton}>
+              About
+            </a>
           </li>
           <li className="munu__li">
-            <a href="#projects">Projects</a>
+            <a href="#projects" onClick={handleButton}>
+              Projects
+            </a>
           </li>
           <li className="munu__li">
-            <a href="#skills">Skills</a>
+            <a href="#skills" onClick={handleButton}>
+              Skills
+            </a>
           </li>
           <li className="lettersSection">Stay in touch</li>
           <li className="munu__li">
-            <a href="#contact">Contact</a>
+            <a href="#contact" onClick={handleButton}>
+              Contact
+            </a>
           </li>
         </ul>
         <div className="buttonsSection">
