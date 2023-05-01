@@ -11,11 +11,19 @@ import nodejsLogo from '../../assets/nodejs.svg';
 import mysqlLogo from '../../assets/mysql.svg';
 import gitLogo from '../../assets/git.svg';
 
-const Skills = () => {
+const Skills = (props) => {
   const [isIntersected, skillsRef] = useIntersection({ threshold: 0.25 });
 
   return (
-    <section id="skills" ref={skillsRef}>
+    <section
+      id="skills"
+      ref={skillsRef}
+      style={
+        props.themeDark
+          ? null
+          : { backgroundColor: '#101010', borderRadius: '16px' }
+      }
+    >
       <div className={isIntersected ? 'skills skills-isIntersected' : 'skills'}>
         <div className="skills-title">
           <h3>Skills</h3>

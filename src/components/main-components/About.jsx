@@ -3,7 +3,7 @@ import './About.css';
 import useIntersection from '../../hooks/useIntersection';
 import logo from '/logo.svg';
 
-const About = () => {
+const About = (props) => {
   const [isIntersected, aboutRef] = useIntersection();
 
   return (
