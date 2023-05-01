@@ -1,0 +1,26 @@
+#home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-title {
+  font-size: clamp(3rem, calc((100vw - 50vw) * 0.1), 7rem);
+  margin-bottom: 1rem;
+  transition-duration: 1s;
+  color: transparent;
+}
+
+.main-title-isInersected {
+  color: var(--text-ligth-color);
+}
+
+.main-description {
+  font-size: 1rem;
+  color: transparent;
+  transition-duration: 1s;
+}
+.main-description-isIntersected {
+  color: var(--text-ligth-color);
+}

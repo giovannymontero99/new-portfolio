@@ -12,10 +12,12 @@ const Navbar = () => {
     <section className="menuSection">
       <div
         onClick={handleButton}
-        class={`hamburger hamburger--spring ${btnActive ? 'is-active' : ''}`}
+        className={`hamburger hamburger--spring ${
+          btnActive ? 'is-active' : ''
+        }`}
       >
-        <div class="hamburger-box">
-          <div class="hamburger-inner"></div>
+        <div className="hamburger-box">
+          <div className="hamburger-inner"></div>
         </div>
       </div>
       <div
