@@ -1,12 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+import { ThemeContext } from '../App';
 import './Navbar.css';
 
 const Navbar = () => {
   const [btnActive, setBtnActive] = useState(false);
-
   const handleButton = () => {
     return setBtnActive(!btnActive);
   };
+
+  const theme = useContext(ThemeContext);
 
   return (
     <section className="menuSection">
@@ -55,8 +57,20 @@ const Navbar = () => {
           </li>
         </ul>
         <div className="buttonsSection">
-          <div className="buttonSelected">Ligth</div>
-          <div className="buttonSelected">Dark</div>
+          <button
+            className="buttonSelected"
+            disabled={theme.themeDark ? false : true}
+            onClick={theme.handleTheme}
+          >
+            Ligth
+          </button>
+          <button
+            className="buttonSelected"
+            onClick={theme.handleTheme}
+            disabled={theme.themeDark ? true : false}
+          >
+            Dark
+          </button>
         </div>
       </div>
     </section>

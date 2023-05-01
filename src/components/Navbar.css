@@ -59,11 +59,11 @@
 
 .buttonSelected {
   height: 2rem;
-  display: flex;
+  border: none;
+  background-color: #888888;
   padding: 0.5rem;
   border-radius: 8px;
-  align-items: center;
-  background-color: #707070;
+  width: 5rem;
   cursor: pointer;
 }
 

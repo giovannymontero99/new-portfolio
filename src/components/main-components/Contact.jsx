@@ -1,17 +1,14 @@
 import React from 'react';
 import './Contact.css';
-import useIntersection from '../../hooks/useIntersection';
 import facebookLogo from '../../assets/facebook.svg';
 import linkedinLogo from '../../assets/linkedin.svg';
 import instagramLogo from '../../assets/instagram.svg';
 import githubLogo from '../../assets/github.svg';
 
 const Contact = () => {
-  const [isIntersected, contactRef] = useIntersection();
-
   return (
     <footer id="contact">
-      <div className="contact" ref={contactRef}>
+      <div className="contact">
         <div>
           <a
             href="https://www.linkedin.com/in/giovanny-montero-carvajal-aa541a194/"
