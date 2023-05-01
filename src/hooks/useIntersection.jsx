@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 
-const useIntersection = () => {
+const useIntersection = (options = { threshold: 0.5 }) => {
   const reference = useRef();
   const [isIntersected, setIsIntersected] = useState();
 
@@ -9,7 +9,7 @@ const useIntersection = () => {
       observedSection.forEach((entry) => {
         return setIsIntersected(entry.isIntersecting);
       });
-    }, {});
+    }, options);
 
     observer.observe(reference.current);
   }, []);

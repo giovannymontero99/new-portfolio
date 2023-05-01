@@ -7,11 +7,8 @@ const About = () => {
   const [isIntersected, aboutRef] = useIntersection();
 
   return (
-    <section id="about">
-      <div
-        className={isIntersected ? 'about isIntersected' : 'about'}
-        ref={aboutRef}
-      >
+    <section id="about" ref={aboutRef}>
+      <div className={isIntersected ? 'about about-isIntersected' : 'about'}>
         <h3>About</h3>
         <div className="about-section">
           <div className="about-text">

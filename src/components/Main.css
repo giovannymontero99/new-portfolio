@@ -38,6 +38,13 @@
   padding-bottom: 8rem;
 }
 
+#home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 /*  Estilos para responsive design */
 
 @media (max-width: 1024px) {

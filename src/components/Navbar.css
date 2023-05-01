@@ -110,6 +110,7 @@
  */
   .hamburger {
     padding: 15px 15px;
+    z-index: 1500;
     display: inline-block;
     cursor: pointer;
     transition-property: opacity, filter;

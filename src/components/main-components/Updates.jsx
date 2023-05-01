@@ -6,10 +6,11 @@ const Updates = () => {
   const [isIntersected, projectRef] = useIntersection();
 
   return (
-    <section id="projects">
+    <section id="projects" ref={projectRef}>
       <div
-        ref={projectRef}
-        className={isIntersected ? 'projects isIntersected' : 'projects'}
+        className={
+          isIntersected ? 'projects projects-isIntersected' : 'projects'
+        }
       >
         <h3>Projects</h3>
         <div className="updatesSection">

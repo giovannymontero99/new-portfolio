@@ -12,15 +12,11 @@ import mysqlLogo from '../../assets/mysql.svg';
 import gitLogo from '../../assets/git.svg';
 
 const Skills = () => {
-  const [isIntersected, skillsRef] = useIntersection();
+  const [isIntersected, skillsRef] = useIntersection({ threshold: 0.25 });
 
   return (
-    <section
-      id="skills"
-      ref={skillsRef}
-      className={isIntersected ? 'skills observing' : 'skills'}
-    >
-      <div>
+    <section id="skills" ref={skillsRef}>
+      <div className={isIntersected ? 'skills skills-isIntersected' : 'skills'}>
         <div className="skills-title">
           <h3>Skills</h3>
         </div>

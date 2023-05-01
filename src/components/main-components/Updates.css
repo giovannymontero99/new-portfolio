@@ -2,9 +2,13 @@
   height: 100vh;
   display: flex;
   align-items: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .projects {
+  position: absolute;
+  left: 100%;
   padding: 1rem 1rem;
   margin-bottom: 8rem;
   background: linear-gradient(
@@ -14,6 +18,12 @@
   );
   border-radius: 16px;
   width: 100%;
+  transition-duration: 1s;
+}
+
+.projects-isIntersected {
+  transition-duration: 1s;
+  left: 0;
 }
 
 .updatesSection {
