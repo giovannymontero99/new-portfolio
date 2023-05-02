@@ -12,6 +12,7 @@
   height: calc(100vh - 2rem);
   color: #fff;
   padding: 2rem 7rem;
+  scroll-behavior: smooth;
 }
 
 .bodySection::-webkit-scrollbar {
